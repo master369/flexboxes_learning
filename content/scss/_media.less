@@ -1,0 +1,202 @@
+﻿@media only all and (min-width: 480px) {
+    .header {
+        -ms-flex-direction: row-reverse;
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .body__layout {
+        width: 481px;
+    }
+
+    .content {
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: baseline;
+    }
+
+    .article {
+        display: inline-flex;
+        width: 220px;
+        margin-right: 10px;
+    }
+
+    .wrapper {
+        margin-top: 0;
+    }
+
+    .footer {
+        padding: 7px 20px 0;
+    }
+}
+
+@media only all and (min-width: 768px) {
+    .body__layout {
+        width: 768px;
+    }
+
+    .header {
+        padding: 0 20px;
+
+        &__navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 400px;
+        }
+
+        & a {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        &__navigation .icon {
+            display: flex;
+            margin: 0 auto 5px auto;
+        }
+
+        &__navigation li {
+            display: flex;
+            -ms-flex-direction: column;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+
+    .article {
+        width: 178px;
+    }
+
+    .content {
+        align-items: flex-start;
+    }
+
+    .subscribe {
+        display: flex;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        height: 60px;
+    }
+
+    .jumbotron {
+        &__header {
+            margin-top: -140px;
+            width: 200px;
+        }
+
+        &__description {
+            width: 470px;
+        }
+
+        &__autors {
+            -ms-flex-direction: row;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            align-self: flex-end;
+            margin-bottom: 7px;
+            margin-top: 20px;
+            background-color: @color-sky;
+            opacity: 0.5;
+        }
+
+        &__nav {
+            display: flex;
+        }
+    }
+}
+
+
+@media only all and (min-width: 992px) {
+    .body__layout {
+        width: 992px;
+        display: flex;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .wrapper {
+        display: flex;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+
+    .main {
+        width: 768px;
+    }
+
+    .header {
+        -ms-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+
+        &__navigation {
+            -ms-flex-direction: column;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            width: auto;
+            border-bottom-width: 0px;
+            align-items: flex-start;
+            height: 200px;
+            margin-top: 0;
+
+            & li {
+                -ms-flex-direction: row;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                -ms-align-content: center;
+                -webkit-align-content: center;
+                align-content: center;
+
+                & a {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        &__logo_img {
+            margin-top: 0;
+        }
+
+
+        &__ad {
+            display: flex;
+        }
+    }
+}
+
+@media only all and (min-width: 1176px) {
+    .jumbotron {
+        &__nav {
+            height: 80px;
+
+            & li {
+                display: flex;
+                height: 80px;
+                -ms-flex-direction: column;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                align-items: flex-start;
+
+                & a {
+                    display: flex;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
